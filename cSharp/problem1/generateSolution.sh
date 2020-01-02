@@ -1,0 +1,1 @@
+C:/Windows/Microsoft.NET/Framework64/v4.0.30319/csc.exe multiplesOf3and5.cs | grep error; start multiplesOf3and5.exe; if [[ -f C:/Users/Public/problem1_solution.txt ]]; then start C:/Users/Public/problem1_solution.txt; fi
