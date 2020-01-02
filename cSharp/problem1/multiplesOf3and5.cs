@@ -15,7 +15,7 @@ namespace ProjectEulerProblem1
 
 	public class MultiplesSequence
 	{
-		public int[] getMultiplesIntArray(int limit)
+		public static int[] getMultiplesIntArray(int limit)
 		{	
 			// Create list object to append multiples
 			List<int> multiplesIntList = new List<int>();
@@ -43,10 +43,12 @@ namespace ProjectEulerProblem1
 
 	class ArraySum 
 	{
-		private int sum = 0;
+		private static int sum;
 		
-		public int getSum(int[] array)
+		public static int GetSum(int[] array)
 		{
+			sum = 0;
+
 			for(int index = 0; index < array.Length; index++)
 			{
 				sum += array[index];
@@ -60,18 +62,27 @@ namespace ProjectEulerProblem1
 	{
 		public static void Main(String[] args)
 		{
-			var multiplesSequence = new MultiplesSequence();
-			int[] multiplesIntArray = multiplesSequence.getMultiplesIntArray(10);
+			//To store answers
+			int[] multiplesIntArray;
+			int multiplesSumInt;
+			string multiplesSumString;
+			var lines = new List<string>();
 
-			var arraySum = new ArraySum();
-			int multiplesIntSum = arraySum.getSum(multiplesIntArray);
+			multiplesIntArray = MultiplesSequence.getMultiplesIntArray(10);
+			multiplesSumInt = ArraySum.GetSum(multiplesIntArray);
+			multiplesSumString = multiplesSumInt.ToString();
+			lines.Add(multiplesSumString);
 
-			string multiplesStringSum = multiplesIntSum.ToString();
+			multiplesIntArray = MultiplesSequence.getMultiplesIntArray(1000);
+			multiplesSumInt = ArraySum.GetSum(multiplesIntArray);
+			multiplesSumString = multiplesSumInt.ToString();
+			lines.Add(multiplesSumString);
+
 
 			// string[] multiplesStringArray = Array.ConvertAll(multiplesIntArray, x=>x.ToString());
-			string solutionTextFile = @"C:/Users/Public/problem1_solution.txt";
+			string directory = @"C:/Users/Public/problem1_solution.txt";
 			// System.IO.File.WriteAllLines(solutionTextFile, multiplesStringArray);
-			System.IO.File.WriteAllText(solutionTextFile, multiplesStringSum);
+			System.IO.File.WriteAllLines(directory, lines);
 		}
 	}
 }
