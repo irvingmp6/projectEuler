@@ -69,7 +69,7 @@ namespace ProjectEulerProblem1
 			string multiplesStringSum = multiplesIntSum.ToString();
 
 			// string[] multiplesStringArray = Array.ConvertAll(multiplesIntArray, x=>x.ToString());
-			string solutionTextFile = @"C:/Users/imartinez/Documents/GitRepos/projectEuler/cSharp/problem1_solution.txt";
+			string solutionTextFile = @"C:/Users/Public/problem1_solution.txt";
 			// System.IO.File.WriteAllLines(solutionTextFile, multiplesStringArray);
 			System.IO.File.WriteAllText(solutionTextFile, multiplesStringSum);
 		}
