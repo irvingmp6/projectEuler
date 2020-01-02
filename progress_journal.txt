@@ -1,0 +1,60 @@
+01/01/2020
+	<TLDR>I created my first ever C# program in a few hours that solves
+	an problem 1 of project euler. I did this to take a little break
+	from other ongoing projects.</TLDR>
+
+	Happy New Year's, everyone! I'm starting off the new year with a new 
+	found love for C#.
+
+	This comes a few weeks after I self-diagnosed myself with Programmer's
+	Burnout. It's been hard sitting down and keeping the grind going. But 
+	I am managing farily well now solving Project Euler problems in C#4.
+
+	For about a month, I deleved into the world of Django and Web
+	Development to create a business solution for my Tae Kwondo Master. The
+	idea is that his customers (including myself) will be able to make 
+	online payments and more. I spent weeks designing the pages in HTML and
+	CSS with the help of bootstrap while learning the Django framework,
+	which will serve as the back end.
+
+	It became difficult trying to create this in the small pockets of time
+	that I have. Between a full-time job two cities away as a Software QA 
+	Analyst and taking care of my personal life, I am under constant 
+	pressure to getting my programming work done. I have a problem in that
+	I don't allow myself to take breaks. If I find that I have time to
+	lounge around or lolligag or watch pointless YouTube videos, then I
+	have time to study and finishing what I started.
+
+	I feel like I've missed out on an good career dropping out of college,
+	and I have been playing catch up ever since. My goal is to ultimately 
+	have an amazing resume such that I can apply to any software 
+	engineering role, something that I should've had a long time ago. I see
+	videos of young	people talking about their expiriences working as a SE 
+	at FANG	companies, and it makes me feel like I'm far behind in the race
+	to acheive a successful career.
+
+	My mind finally had enough of it. I crammed so many things in a short 
+	amount of time that I just couldn't open my laptop and practice. It 
+	wasn't that I didn't want to, it's just I didn't have the drive
+	anymore. So these last couple of days I've been spending mindlessly
+	job searching and reading the descriptions. A lot of the requirements
+	in the DFW area mention Java and OOP languages like that. So I decided
+	to mess around with the language using an online text editor to see
+	if I could still create the Hello World program they taught me in
+	school. Wanting to be able to work offline, I fired up Sublime, and 
+	coded the same program in C# because I could use the native compiler
+	that comes with Windows, and I didn't have to download JVM or anything
+	else. A few hours later, I found myself being curious again and 
+	going through stack overflow and the official documentation for C#
+	just trying to solve more challenging problems.
+
+	So there you have it. My short journey through programmer's burnout. I
+	wouldn't say I'm completely out of it. Just thinking about going back
+	to working on Django (and another Pandas/SQlite project) sucks out my
+	drive and I can feel becmoing immobile again. So I'm just going to
+	stick around in C# for a while, almost like a bit of a vacation...Also
+	I think the projects at work also suck the life out of me because I 
+	tend to wear a lot of hats and I'm under constant pressure by my tech
+	lead and the business in ensuring that our latest product/service is 
+	bug-free seeing that we're in the financial industry and we don't 
+	want to screw up with someone else's money.
