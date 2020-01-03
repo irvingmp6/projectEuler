@@ -41,7 +41,7 @@ namespace ProjectEulerProblem1
 		}
 	}
 
-	class ArraySum 
+	public class ArraySum 
 	{
 		private static int sum;
 		
@@ -58,7 +58,7 @@ namespace ProjectEulerProblem1
 		}
 	}
 
-	class Solution 
+	public class Solution 
 	{
 		public static void Main(String[] args)
 		{
@@ -77,7 +77,6 @@ namespace ProjectEulerProblem1
 			multiplesSumInt = ArraySum.GetSum(multiplesIntArray);
 			multiplesSumString = multiplesSumInt.ToString();
 			lines.Add(multiplesSumString);
-
 
 			// string[] multiplesStringArray = Array.ConvertAll(multiplesIntArray, x=>x.ToString());
 			string directory = @"C:/Users/Public/problem1_solution.txt";
