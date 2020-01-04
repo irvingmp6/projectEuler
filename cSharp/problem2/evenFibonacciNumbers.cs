@@ -73,17 +73,36 @@ namespace ProjectEulerProblem2
 			int arrayLength;
 			string[] lines;
 			int lastFibonacciTerm = 0;
-			int count = 0;
+			int count;
+			sequenceInt = FibonacciSequence.Generate(count);
 
-			while (lastFibonacciTerm < 4000000)
+			for (count = 0; lastFibonacciTerm < 4000000; count++)
 			{
 				sequenceInt = FibonacciSequence.Generate(count);
-				lastFibonacciTerm =  sequenceInt[sequenceInt.Length - 1];
+				lastFibonacciTerm = sequenceInt[sequenceInt.Length];
+			}
+
+
+			var evenNumbers = new List<int>();
+			for (count =0; count < sequenceInt.Length; count++)
+			{
+				if (sequenceInt[count] % 2 == 0)
+				{
+					evenNumbers.add(sequenceInt[count]);
+				}
 			}
 
 			lines = new string[sequenceInt.Length];
 
-			// System.IO.File.WriteAllLines(directory, text);
+			for (int index = 0; index < lines.Length; index++)
+			{
+				lines[index] = sequenceInt[index].ToString();
+			}
+
+			System.IO.File.WriteAllLines(directory, lines);
+
+
+
 
 		}
 	}
